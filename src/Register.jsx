@@ -12,7 +12,7 @@ export default function Register() {
   const[user,setUser]=useState({});
   const handleSubmit= async () =>{
     try{
-    const url="http://localhost:8080/api/users/register";
+    const url="https://mern-backend-six-zeta.vercel.app/api/users/register";
     const user=axios.post(url,user);
     setError("Data saved successfully")
 
